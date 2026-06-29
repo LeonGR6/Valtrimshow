@@ -245,7 +245,7 @@ export const translations = {
         projectType: "Project Type",
         details: "Project Details",
         submit: "Send Inquiry",
-        sent: "Thanks — your inquiry has been received. Our team will be in touch shortly.",
+        sent: "Thank you. ValTrim's team will review the details and follow up.",
       },
     },
     footer: {

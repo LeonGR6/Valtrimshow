@@ -144,5 +144,48 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    overflow-x: hidden;
+  }
+}
+
+
+/* ---------- Scrollbar: desktop personalizado, mobile minimalista ---------- */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.5) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 163, 184, 0.45);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(148, 163, 184, 0.7);
+}
+.dark *::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    scrollbar-width: none;          /* Firefox mobile */
+    -ms-overflow-style: none;       /* Edge legacy */
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  *::-webkit-scrollbar {
+    display: none;                  /* Chrome/Safari mobile: oculta y libera el espacio */
+    width: 0;
+    height: 0;
+    background: transparent;
   }
 }

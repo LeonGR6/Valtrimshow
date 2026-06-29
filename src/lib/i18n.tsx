@@ -23,9 +23,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <I18nContext.Provider value={{ lang, t: translations.en }}>
-      {children}
-    </I18nContext.Provider>
+    <I18nContext.Provider value={{ lang, t: translations.en }}>{children}</I18nContext.Provider>
   );
 }
 
