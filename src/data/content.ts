@@ -25,12 +25,7 @@ export const serviceIcons: LucideIcon[] = [
   Factory,
 ];
 
-export const stepIcons: LucideIcon[] = [
-  ClipboardList,
-  PackageSearch,
-  Wrench,
-  CheckSquare,
-];
+export const stepIcons: LucideIcon[] = [ClipboardList, PackageSearch, Wrench, CheckSquare];
 
 export const portfolioImages = [
   "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70",
@@ -63,27 +58,27 @@ export const translations = {
       eyebrow: "Builder-Focused Supply & Install",
       title: "Finish Carpentry Supply & Install for Southern California Builders.",
       subtitle:
-        "ValTrim Inc. delivers quality-driven finish carpentry packages for multifamily, residential, tract, affordable housing, and light commercial projects across Southern California and Greater Los Angeles.",
+        "ValTrim Inc. delivers quality-driven finish carpentry packages for multifamily, residential, tract, affordable housing, and light commercial projects across Southern California.",
       viewWork: "View Our Work",
       contactCta: "Contact Our Team",
       snapshotEyebrow: "Builder Snapshot",
       snapshotTitle: "Supply. Coordinate. Install.",
       highlights: [
-        "Doors, frames, hardware, mouldings, shelves, and finish trim packages",
-        "Builder-oriented support with responsive communication and schedule awareness",
-        "Residential, multifamily, and light commercial project capability",
+        "Frames, Doors, Mouldings, Shelving, Hardware & Bath Accessories",
+        "Builder-Oriented Support with Responsive Communication and Schedule Awareness",
+        "Residential, Multifamily & Light Commercial Project Experience",
       ],
     },
     stats: [
       { value: 10, suffix: "+", label: "Years in Business" },
       { value: 250, suffix: "+", label: "Projects Completed & Ongoing" },
-      { value: 20, suffix: "+", label: "Supplier Partners" },
+      { value: 30, suffix: "+", label: "Supplier Partners" },
     ],
     about: {
       eyebrow: "About ValTrim",
       title: "A reliable finish carpentry partner for builders and contractors.",
       description:
-        "ValTrim Inc. is a Riverside-based finish carpentry subcontractor built around dependable coordination, elevated workmanship, and long-term trusted relationships across supply and installation scopes.",
+        "Valtrim Inc. is a Riverside-based finish carpentry subcontractor built around dependable coordination, elevated workmanship, and long-term trusted relationships with builders and contractors.",
       cta: "Work With Us",
       cards: [
         {
@@ -96,7 +91,7 @@ export const translations = {
         },
         {
           title: "Where We Work",
-          text: "San Bernardino County & Orange County",
+          text: "Southern California",
         },
       ],
     },
@@ -104,31 +99,31 @@ export const translations = {
       eyebrow: "Products & Services",
       title: "Builder-ready scopes with a clean, premium presentation.",
       description:
-        "ValTrim supports builders with products and installation services selected for dependable field performance and production efficiency.",
+        "ValTrim supports builders with supply and installation services designed for dependable field performance, production efficiency, and consistent project delivery.",
       items: [
         {
           title: "Doors & Frames",
-          text: "Interior and exterior door systems with builder-oriented coordination and production support.",
+          text: "Interior and exterior doors and frames coordinated for production schedules, field reliability, and clean installation.",
         },
         {
           title: "Hardware Packages",
-          text: "Architectural hardware selected for reliability, consistency, and field-ready performance.",
+          text: "Architectural hardware packages selected for reliability, consistency, and field-ready performance.",
         },
         {
           title: "Moulding & Trim",
-          text: "Base, casing, shelving, and finish trim delivered with a clean installation standard.",
+          text: "Base, casing, shelving, and finish trim installed with clean execution and consistent finish standards.",
         },
         {
           title: "Finish Carpentry Install",
-          text: "Professional installation support for multifamily, residential, tract, and light commercial projects.",
+          text: "Professional installation support for production residential, multifamily, and light commercial projects.",
         },
         {
           title: "Builder Coordination",
-          text: "Responsive communication, procurement support, and schedule-aware execution.",
+          text: "Responsive communication, procurement support, and schedule-aware coordination from preconstruction through field execution.",
         },
         {
           title: "Production Support",
-          text: "Scalable supply and install capabilities built around production construction workflows.",
+          text: "Scalable supply and installation support built around production construction schedules and repeatable field execution.",
         },
       ],
     },
@@ -136,23 +131,23 @@ export const translations = {
       eyebrow: "How We Work",
       title: "A clear, builder-friendly process from scope to closeout.",
       description:
-        "A clean, repeatable workflow that keeps your project schedule, budget, and finish quality on track.",
+        "A clean, repeatable workflow built to keep schedules, budgets, and finish quality on track.",
       steps: [
         {
           title: "Scope Review",
-          text: "We review plans, specs, and project scope to confirm scope and align with builder expectations.",
+          text: "We review plans, specs, and project requirements to confirm scope, identify details, and align with builder expectations.",
         },
         {
           title: "Material Coordination",
-          text: "We coordinate with suppliers to procure doors, hardware, and trim packages ahead of schedule.",
+          text: "We coordinate with suppliers to secure doors, hardware, mouldings, shelving, and trim packages ahead of field demand.",
         },
         {
           title: "Installation",
-          text: "Field crews deliver clean, on-schedule installation with finish-quality workmanship.",
+          text: "Field crews provide clean, schedule-aware installation with finish-quality workmanship.",
         },
         {
           title: "Project Closeout",
-          text: "Punch resolution, final walks, and documentation handed off to keep your project moving.",
+          text: "Punch items, final walks, and closeout documentation are handled efficiently to keep the project moving.",
         },
       ],
     },
@@ -162,10 +157,26 @@ export const translations = {
       description:
         "A look at the scopes ValTrim delivers — doors, hardware, trim, and finish carpentry packages built for production builders.",
       items: [
-        { title: "Production Residential", subtitle: "Multifamily and tract-focused finish packages" },
-        { title: "Hardware", subtitle: "Architectural hardware coordination and supply" },
-        { title: "Residential", subtitle: "Premium residential doors, trim, and installation" },
-        { title: "Finish Carpentry", subtitle: "Trim, moulding, and detail-driven field execution" },
+        {
+          title: "Multifamily",
+          subtitle:
+            "Expanded finish and specialty scopes including doors, frames, hardware, bath accessories, partitions, fire extinguishers, Knox Boxes, mailboxes, and electrified door hardware for access-control openings.",
+        },
+        {
+          title: "Production Residential",
+          subtitle:
+            "Scalable finish carpentry packages for tract and builder residential communities.",
+        },
+        {
+          title: "Hardware",
+          subtitle:
+            "Residential, multifamily, and light commercial hardware packages coordinated for reliable field performance and builder-ready installation.",
+        },
+        {
+          title: "Model Decor / Finish Details",
+          subtitle:
+            " Custom wall details, T&G, decorative trim, and model-home finish accents with clean, detail-driven installation.",
+        },
       ],
     },
     testimonials: {
@@ -176,21 +187,21 @@ export const translations = {
       items: [
         {
           quote:
-            "ValTrim's coordination on our multifamily packages was second to none. Materials hit the site exactly when we needed them and the install crew left every unit clean.",
-          name: "Marcus R.",
-          role: "Project Manager · Multifamily Builder",
+            "Valtrim is an outstanding trim carpentry company. They are consistently on time, stay within budget, and deliver exactly as promised. Their attention to detail and reliability make every project run smoothly, and they always ensure materials and finishes are delivered on schedule. It’s refreshing to work with a team that is so dependable and professional from start to finish.",
+          name: "Jennifer Soratos",
+          role: "Kb home",
         },
         {
           quote:
             "We've trusted ValTrim across multiple tract communities. Their communication with our purchasing team and field discipline keeps our schedule honest.",
           name: "Stephanie L.",
-          role: "Purchasing Director · Production Builder",
+          role: "Purchasing Director, Production Builder",
         },
         {
           quote:
-            "From doors and hardware to final punch, ValTrim takes ownership. They're the kind of subcontractor we want on every project.",
-          name: "Daniel K.",
-          role: "Superintendent · Residential GC",
+            "I highly recommend using ValTrim Inc. on your next project because of their hands-on attention to detail from the pre-planning stages all the way through installation, including providing very competitive pricing.",
+          name: "Kayvon Saremaslani",
+          role: "Purchasing Manager, RC Homes Inc.",
         },
       ],
     },
@@ -198,45 +209,44 @@ export const translations = {
       eyebrow: "Suppliers",
       title: "Trusted supplier partnerships that support dependable delivery.",
       description:
-        "ValTrim works with trusted manufacturers and distribution partners to support quality, coordination, and field readiness.",
+        "Valtrim works with trusted manufacturers, suppliers, and distribution partners to support quality, coordination, and field-ready delivery.",
       items: [
-        "Window Manufacturers",
-        "Door & Frame Suppliers",
-        "Architectural Hardware Brands",
-        "Moulding & Trim Partners",
-        "Regional Distribution Channels",
-        "Installation Support Vendors",
+        "Door & Frame Suppliers ",
+        "Door Hardware Brands",
+        "Moulding & Trim Suppliers",
+        "Bath Accessories & Partitions",
+        "Mailboxes, Knox Boxes & Fire Extinguishers",
+        "Regional Material Suppliers",
       ],
     },
     whyus: {
       eyebrow: "Why Choose Us",
-      title: "A builder-oriented approach grounded in craftsmanship and reliability.",
+      title: "A builder-focused approach grounded in craftsmanship and reliability.",
       description:
-        "ValTrim is built around responsive execution, clean finish standards, and dependable coordination across supply and installation scopes.",
+        "ValTrim is built around responsive execution, clean finish standards, and dependable coordination from procurement through installation.",
       reasons: [
-        "Builder-oriented execution with production project discipline",
-        "Quality-first finish standards and clean field craftsmanship",
+        "Builder-focused execution with production project discipline",
+        "Quality-first finish standards and clean field workmanship",
         "Reliable supplier partnerships and coordinated procurement",
         "Clear communication across estimating, purchasing, and project teams",
-        "Long-term trusted relationships built on consistency and follow-through",
-        "Support across Southern California residential and light commercial scopes",
+        "Long-term relationships built on consistency and follow-through",
+        "Support for Southern California residential, multifamily, and light commercial scopes",
       ],
     },
     contact: {
       eyebrow: "Contact",
       title: "Connect with our builder support team.",
-      description:
-        "Route your inquiry to the right department with a clean, professional intake — designed for builders, estimators, and project teams.",
+      description: "Share your project details and we’ll follow up with next steps.",
       areaTitle: "Service Area",
-      areaLine1: "Riverside, California",
-      areaLine2:
-        "Serving Inland Empire, Los Angeles County, Ventura, and surrounding production markets.",
+      areaLine1: "Based in Riverside, California",
+      areaLine2: "Serving builders throughout Southern California.",
       phoneTitle: "Phone",
       phoneText: "Available on request",
       emailTitle: "Email",
       formEyebrow: "Builder Inquiry Form",
       formTitle: "Tell us about your project",
-      formText: "Built for builders, contractors, estimators, purchasing teams, and project managers.",
+      formText:
+        "Built for builders, contractors, estimators, purchasing teams, and project managers.",
       fields: {
         company: "Company",
         name: "Contact Name",
@@ -381,10 +391,16 @@ export const translations = {
       description:
         "Una muestra de los alcances que ValTrim entrega — puertas, herrajes, trim y paquetes de carpintería de acabados para constructores de producción.",
       items: [
-        { title: "Residencial de Producción", subtitle: "Paquetes de acabados para multifamiliar y tract" },
+        {
+          title: "Residencial de Producción",
+          subtitle: "Paquetes de acabados para multifamiliar y tract",
+        },
         { title: "Herrajes", subtitle: "Coordinación y suministro de herraje arquitectónico" },
         { title: "Residencial", subtitle: "Puertas, trim e instalación residencial premium" },
-        { title: "Carpintería de Acabados", subtitle: "Trim, molduras y ejecución detallada en campo" },
+        {
+          title: "Carpintería de Acabados",
+          subtitle: "Trim, molduras y ejecución detallada en campo",
+        },
       ],
     },
     testimonials: {
@@ -480,4 +496,3 @@ export const translations = {
 };
 
 export type Dict = typeof translations.en;
-
