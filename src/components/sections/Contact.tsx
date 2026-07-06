@@ -1,22 +1,11 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Send,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Send } from "lucide-react";
 import { Card } from "@/components/ui/section-card";
 import { contactEmail } from "@/data/content";
 import { useI18n } from "@/lib/i18n";
 
-const projectTypes = [
-  "Residential",
-  "Multifamily",
-  "Light Commercial",
-  "Model Decor",
-  "Other",
-];
+const projectTypes = ["Residential", "Multifamily", "Light Commercial", "Model Decor", "Other"];
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -68,10 +57,7 @@ export function Contact() {
     "w-full rounded-lg border border-slate-200 bg-white px-4 py-3.5 text-sm text-[#020617] placeholder:text-[#94a3b8] transition focus:border-[#0f172a] focus:outline-none focus:ring-2 focus:ring-[#0f172a]/10";
 
   return (
-    <section
-      id="contact"
-      className="bg-[#f8fafc] transition-colors duration-300"
-    >
+    <section id="contact" className="bg-[#f8fafc] transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -106,12 +92,8 @@ export function Contact() {
                 <MapPin className="h-5 w-5 text-[#0f172a]" />
               </div>
               <div>
-                <div className="text-sm font-semibold text-[#020617]">
-                  {t.contact.areaTitle}
-                </div>
-                <div className="mt-1.5 text-sm leading-7 text-[#475569]">
-                  {t.contact.areaLine1}
-                </div>
+                <div className="text-sm font-semibold text-[#020617]">{t.contact.areaTitle}</div>
+                <div className="mt-1.5 text-sm leading-7 text-[#475569]">{t.contact.areaLine1}</div>
               </div>
             </div>
           </Card>
@@ -122,12 +104,8 @@ export function Contact() {
                 <Phone className="h-5 w-5 text-[#0f172a]" />
               </div>
               <div>
-                <div className="text-sm font-semibold text-[#020617]">
-                  {t.contact.phoneTitle}
-                </div>
-                <div className="mt-1.5 text-sm leading-7 text-[#475569]">
-                  {t.contact.phoneText}
-                </div>
+                <div className="text-sm font-semibold text-[#020617]">{t.contact.phoneTitle}</div>
+                <div className="mt-1.5 text-sm leading-7 text-[#475569]">{t.contact.phoneText}</div>
               </div>
             </div>
           </Card>
@@ -139,9 +117,7 @@ export function Contact() {
                   <Mail className="h-5 w-5 text-[#0f172a]" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-[#020617]">
-                    {t.contact.emailTitle}
-                  </div>
+                  <div className="text-sm font-semibold text-[#020617]">{t.contact.emailTitle}</div>
                   <div className="mt-1.5 text-sm leading-7 text-[#475569]">
                     Tap to send an email
                   </div>
@@ -169,27 +145,28 @@ export function Contact() {
               {/* Contact info */}
               <div>
                 <div className="mb-6">
-                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#0f172a]/60">
-                    YOUR CONTACT INFORMATION
-                  </span>
+                  <h3 className="text-2xl font-bold text-[#0f172a]">Start your project inquiry</h3>
+                  <p className="mt-2 text-sm text-slate-600">
+                    Share a new project details and our team will follow up.
+                  </p>
+                  <div className="mt-5 h-px w-full bg-slate-100" />
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                   <div className="space-y-2">
-                  <label className={labelCls}>
-                      Full Name
-                    </label>
+                    <label className={labelCls}>Full Name</label>
                     <input name="name" className={inputCls} placeholder="John Doe" required />
                   </div>
                   <div className="space-y-2">
-                    <label className={labelCls}>
-                      Company
-                    </label>
-                    <input name="company" className={inputCls} placeholder="Company name" required />
+                    <label className={labelCls}>Company</label>
+                    <input
+                      name="company"
+                      className={inputCls}
+                      placeholder="Company name"
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
-                    <label className={labelCls}>
-                      Email Address
-                    </label>
+                    <label className={labelCls}>Email Address</label>
                     <input
                       name="email"
                       type="email"
@@ -199,10 +176,13 @@ export function Contact() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className={labelCls}>
-                      Phone Number
-                    </label>
-                    <input name="phone" className={inputCls} placeholder="(555) 123-4567" required />
+                    <label className={labelCls}>Phone Number</label>
+                    <input
+                      name="phone"
+                      className={inputCls}
+                      placeholder="(555) 123-4567"
+                      required
+                    />
                   </div>
                 </div>
               </div>
@@ -219,9 +199,7 @@ export function Contact() {
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                   <div className="space-y-2 sm:col-span-2 lg:col-span-1">
-                    <label className={labelCls}>
-                      Project Location
-                    </label>
+                    <label className={labelCls}>Project Location</label>
                     <input
                       name="location"
                       className={inputCls}
@@ -231,9 +209,7 @@ export function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className={labelCls}>
-                      Project Type
-                    </label>
+                    <label className={labelCls}>Project Type</label>
                     <select name="projectType" className={inputCls} required defaultValue="">
                       <option value="" disabled>
                         Select a type
@@ -247,16 +223,12 @@ export function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <label className={labelCls}>
-                      Start / Bid Due Date
-                    </label>
+                    <label className={labelCls}>Start / Bid Due Date</label>
                     <input name="startDate" type="date" className={inputCls} />
                   </div>
 
                   <div className="space-y-2 sm:col-span-2 lg:col-span-3">
-                    <label className={labelCls}>
-                      Scope of Work Needed
-                    </label>
+                    <label className={labelCls}>Scope of Work Needed</label>
                     <input
                       name="scope"
                       className={inputCls}
@@ -266,9 +238,7 @@ export function Contact() {
                   </div>
 
                   <div className="space-y-3 sm:col-span-2 lg:col-span-3">
-                    <label className={labelCls}>
-                      Plans / Specifications Available?
-                    </label>
+                    <label className={labelCls}>Plans / Specifications Available?</label>
                     <div className="flex flex-wrap gap-3">
                       {(["yes", "no"] as const).map((opt) => {
                         const active = plansAvailable === opt;
