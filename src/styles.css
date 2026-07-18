@@ -138,13 +138,25 @@
   }
 
   html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
     scroll-behavior: smooth;
+    background-color: #f5f1ea;
   }
 
   body {
+    width: 100%;
+    max-width: 100%;
     background-color: var(--color-background);
     color: var(--color-foreground);
-    overflow-x: hidden;
+    overflow-x: clip;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
   }
 }
 
