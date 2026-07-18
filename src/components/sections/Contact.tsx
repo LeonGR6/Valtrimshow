@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/section-card";
 import { contactEmail } from "@/data/content";
 import { useI18n } from "@/lib/i18n";
 
-const projectTypes = ["Residential", "Multifamily", "Light Commercial", "Model Decor", "Other"];
+const projectTypes = ["Residential", "Multifamily", "Light Commercial", "Other"];
 
 export function Contact() {
   const [sent, setSent] = useState(false);

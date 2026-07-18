@@ -111,7 +111,7 @@ export const translations = {
         },
         {
           title: "Moulding & Trim",
-          text: "Base, casing, shelving, and finish trim installed with clean execution and consistent finish standards.",
+          text: "Baseboard, casing, shelving, and finish trim installed with clean execution and consistent finish standards.",
         },
         {
           title: "Finish Carpentry Install",
@@ -216,7 +216,7 @@ export const translations = {
         "Moulding & Trim Suppliers",
         "Bath Accessories & Partitions",
         "Mailboxes, Knox Boxes & Fire Extinguishers",
-        "Regional Material Suppliers",
+        "Material Suppliers",
       ],
     },
     whyus: {
@@ -241,7 +241,7 @@ export const translations = {
       areaLine1: "Based in Riverside, California",
       areaLine2: "Serving builders throughout Southern California.",
       phoneTitle: "Phone",
-      phoneText: "Available on request",
+      phoneText: "Available",
       emailTitle: "Email",
       formEyebrow: "Builder Inquiry Form",
       formTitle: "Tell us about your project",
