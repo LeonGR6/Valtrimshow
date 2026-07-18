@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Send } from "lucide-react";
+import { MapPin, Mail, Send } from "lucide-react";
 import { Card } from "@/components/ui/section-card";
 import { contactEmail } from "@/data/content";
 import { useI18n } from "@/lib/i18n";
@@ -84,10 +84,10 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mb-14 grid gap-5 sm:grid-cols-3"
+          className="mx-auto mb-14 grid max-w-4xl gap-5 sm:grid-cols-2"
         >
           <Card interactive={false} className="h-full">
-            <div className="flex h-full items-start gap-4 p-6">
+            <div className="flex h-full min-h-32 items-center gap-4 p-7">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-slate-100">
                 <MapPin className="h-5 w-5 text-[#0f172a]" />
               </div>
@@ -98,21 +98,15 @@ export function Contact() {
             </div>
           </Card>
 
-          <Card interactive={false} className="h-full">
-            <div className="flex h-full items-start gap-4 p-6">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-slate-100">
-                <Phone className="h-5 w-5 text-[#0f172a]" />
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-[#020617]">{t.contact.phoneTitle}</div>
-                <div className="mt-1.5 text-sm leading-7 text-[#475569]">{t.contact.phoneText}</div>
-              </div>
-            </div>
-          </Card>
-
-          <a href={`mailto:${contactEmail}`} className="block h-full">
-            <Card interactive={false} className="h-full">
-              <div className="flex items-start gap-4 p-6">
+          <a
+            href={`mailto:${contactEmail}`}
+            className="group block h-full rounded-[24px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0f172a] focus-visible:ring-offset-2"
+          >
+            <Card
+              interactive={false}
+              className="h-full group-hover:-translate-y-0.5 group-hover:border-slate-300 group-hover:shadow-md"
+            >
+              <div className="flex h-full min-h-32 items-center gap-4 p-7">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-slate-100">
                   <Mail className="h-5 w-5 text-[#0f172a]" />
                 </div>
