@@ -140,23 +140,28 @@
   html {
     width: 100%;
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
     scroll-behavior: smooth;
     background-color: #f5f1ea;
   }
 
   body {
+    position: relative;
     width: 100%;
     max-width: 100%;
     background-color: var(--color-background);
     color: var(--color-foreground);
-    overflow-x: clip;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
   }
 
   #root {
+    position: relative;
+    min-width: 0;
     width: 100%;
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden;
   }
 }
 
@@ -187,6 +192,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  body {
+    touch-action: pan-y pinch-zoom;
+  }
+
   html,
   body {
     scrollbar-width: none;          /* Firefox mobile */
