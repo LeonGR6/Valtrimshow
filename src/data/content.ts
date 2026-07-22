@@ -27,11 +27,31 @@ export const serviceIcons: LucideIcon[] = [
 
 export const stepIcons: LucideIcon[] = [ClipboardList, PackageSearch, Wrench, CheckSquare];
 
-export const portfolioImages = [
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=70",
-  "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1000&q=70",
-  "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1000&q=70",
-  "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1000&q=70",
+export const portfolioGalleries = [
+  [
+    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+  ],
+  [
+    "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80",
+  ],
+  [
+    "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=80",
+  ],
+  [
+    "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1600&q=80",
+  ],
 ];
 
 export const translations = {
@@ -153,6 +173,8 @@ export const translations = {
     },
     portfolio: {
       eyebrow: "Portfolio",
+      openGallery: "View gallery",
+      imageLabel: "Gallery image",
       title: "Project categories across Southern California.",
       description:
         "A look at the scopes ValTrim delivers — doors, hardware, trim, and finish carpentry packages built for production builders.",
@@ -387,6 +409,8 @@ export const translations = {
     },
     portfolio: {
       eyebrow: "Portafolio",
+      openGallery: "Ver galería",
+      imageLabel: "Imagen de la galería",
       title: "Categorías de proyectos en todo el Sur de California.",
       description:
         "Una muestra de los alcances que ValTrim entrega — puertas, herrajes, trim y paquetes de carpintería de acabados para constructores de producción.",
