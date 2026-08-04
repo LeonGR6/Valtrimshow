@@ -209,7 +209,7 @@ export const translations = {
             "Expanded finish and specialty scopes including doors, frames, hardware, bath accessories, partitions, fire extinguishers, Knox Boxes, mailboxes, and electrified door hardware for access-control openings.",
         },
         {
-          title: "Production Residential",
+          title: "Single Family",
           subtitle:
             "Scalable finish carpentry packages for tract and builder residential communities.",
         },
