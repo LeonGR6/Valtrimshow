@@ -59,13 +59,6 @@ export const portfolioGalleries = [
     "/portfolio/production-residential/production-residential-12.webp",
     "/portfolio/production-residential/production-residential-13.webp",
     "/portfolio/production-residential/production-residential-14.webp",
-    "/portfolio/production-residential/production-residential-15.webp",
-  ],
-  [
-    "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1600&q=80",
-    "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80",
-    "https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1600&q=80",
-    "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=80",
   ],
   [
     "/portfolio/model-decor.webp",
@@ -212,11 +205,6 @@ export const translations = {
           title: "Single Family",
           subtitle:
             "Scalable finish carpentry packages for tract and builder residential communities.",
-        },
-        {
-          title: "Hardware",
-          subtitle:
-            "Residential, multifamily, and light commercial hardware packages coordinated for reliable field performance and builder-ready installation.",
         },
         {
           title: "Model Decor / Finish Details",
@@ -443,7 +431,6 @@ export const translations = {
           title: "Residencial de Producción",
           subtitle: "Paquetes de acabados para multifamiliar y tract",
         },
-        { title: "Herrajes", subtitle: "Coordinación y suministro de herraje arquitectónico" },
         { title: "Residencial", subtitle: "Puertas, trim e instalación residencial premium" },
         {
           title: "Carpintería de Acabados",
