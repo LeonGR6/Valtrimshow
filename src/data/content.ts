@@ -39,9 +39,6 @@ export const portfolioGalleries = [
     "/portfolio/multifamily/multifamily-07.webp",
     "/portfolio/multifamily/multifamily-08.webp",
     "/portfolio/multifamily/multifamily-09.webp",
-    "/portfolio/multifamily/multifamily-10.webp",
-    "/portfolio/multifamily/multifamily-11.webp",
-    "/portfolio/multifamily/multifamily-12.webp",
   ],
   [
     "/portfolio/production-residential.webp",
@@ -55,10 +52,6 @@ export const portfolioGalleries = [
     "/portfolio/production-residential/production-residential-08.webp",
     "/portfolio/production-residential/production-residential-09.webp",
     "/portfolio/production-residential/production-residential-10.webp",
-    "/portfolio/production-residential/production-residential-11.webp",
-    "/portfolio/production-residential/production-residential-12.webp",
-    "/portfolio/production-residential/production-residential-13.webp",
-    "/portfolio/production-residential/production-residential-14.webp",
   ],
   [
     "/portfolio/model-decor.webp",
@@ -227,12 +220,6 @@ export const translations = {
         },
         {
           quote:
-            "We've trusted ValTrim across multiple tract communities. Their communication with our purchasing team and field discipline keeps our schedule honest.",
-          name: "Stephanie L.",
-          role: "Purchasing Director, Production Builder",
-        },
-        {
-          quote:
             "I highly recommend using ValTrim Inc. on your next project because of their hands-on attention to detail from the pre-planning stages all the way through installation, including providing very competitive pricing.",
           name: "Kayvon Saremaslani",
           role: "Purchasing Manager, RC Homes Inc.",
@@ -245,12 +232,11 @@ export const translations = {
       description:
         "Valtrim works with trusted manufacturers, suppliers, and distribution partners to support quality, coordination, and field-ready delivery.",
       items: [
-        "Door & Frame Suppliers ",
+        "Door & Frame Suppliers",
         "Door Hardware Brands",
         "Moulding & Trim Suppliers",
         "Bath Accessories & Partitions",
         "Mailboxes, Knox Boxes & Fire Extinguishers",
-        "Material Suppliers",
       ],
     },
     whyus: {
@@ -449,12 +435,6 @@ export const translations = {
             "La coordinación de ValTrim en nuestros paquetes multifamiliares fue insuperable. Los materiales llegaron al sitio cuando los necesitábamos y la cuadrilla dejó cada unidad impecable.",
           name: "Marcus R.",
           role: "Gerente de Proyecto · Constructor Multifamiliar",
-        },
-        {
-          quote:
-            "Hemos confiado en ValTrim en varias comunidades tract. Su comunicación con nuestro equipo de compras y su disciplina en campo mantienen nuestro cronograma firme.",
-          name: "Stephanie L.",
-          role: "Directora de Compras · Constructor de Producción",
         },
         {
           quote:

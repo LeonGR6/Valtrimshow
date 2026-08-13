@@ -14,7 +14,7 @@ export function Testimonials() {
           description={t.testimonials.description}
         />
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2">
           {t.testimonials.items.map((item, i) => (
             <motion.div
               key={item.name}
@@ -25,7 +25,9 @@ export function Testimonials() {
             >
               <Card className="h-full">
                 <div className="flex h-full flex-col p-7">
-                  <div className="text-4xl leading-none text-[#0f172a]/30 dark:text-white/30">&ldquo;</div>
+                  <div className="text-4xl leading-none text-[#0f172a]/30 dark:text-white/30">
+                    &ldquo;
+                  </div>
                   <p className="mt-3 flex-1 text-base leading-8 text-[#475569] dark:text-white/75">
                     {item.quote}
                   </p>
