@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ThemeProvider } from "@/lib/theme";
 import { I18nProvider } from "@/lib/i18n";
 import { Navbar } from "@/components/sections/Navbar";
@@ -15,6 +16,28 @@ import { Footer } from "@/components/sections/Footer";
 import { ChatWidget } from "@/components/chatbot/ChatWidget";
 
 export default function App() {
+  useEffect(() => {
+    const navigateToHash = (event: MouseEvent) => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        return;
+      }
+
+      const link =
+        event.target instanceof Element
+          ? event.target.closest<HTMLAnchorElement>('a[href^="#"]')
+          : null;
+      const section = link?.hash ? document.getElementById(link.hash.slice(1)) : null;
+      if (!link || !section) return;
+
+      event.preventDefault();
+      if (window.location.hash !== link.hash) window.history.pushState(null, "", link.hash);
+      requestAnimationFrame(() => section.scrollIntoView({ behavior: "smooth", block: "start" }));
+    };
+
+    document.addEventListener("click", navigateToHash, true);
+    return () => document.removeEventListener("click", navigateToHash, true);
+  }, []);
+
   return (
     <ThemeProvider>
       <I18nProvider>
