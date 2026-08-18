@@ -163,8 +163,11 @@
     max-width: 100%;
     overflow-x: clip;
   }
-}
 
+  section[id] {
+    scroll-margin-top: 5.25rem;
+  }
+}
 
 /* ---------- Scrollbar: desktop personalizado, mobile minimalista ---------- */
 html {
@@ -198,13 +201,13 @@ html {
 
   html,
   body {
-    scrollbar-width: none;          /* Firefox mobile */
-    -ms-overflow-style: none;       /* Edge legacy */
+    scrollbar-width: none; /* Firefox mobile */
+    -ms-overflow-style: none; /* Edge legacy */
   }
   html::-webkit-scrollbar,
   body::-webkit-scrollbar,
   *::-webkit-scrollbar {
-    display: none;                  /* Chrome/Safari mobile: oculta y libera el espacio */
+    display: none; /* Chrome/Safari mobile: oculta y libera el espacio */
     width: 0;
     height: 0;
     background: transparent;

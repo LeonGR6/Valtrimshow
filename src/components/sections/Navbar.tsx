@@ -6,28 +6,6 @@ import { useI18n } from "@/lib/i18n";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import logo from "@/assets/logo.png";
 
-
-
-function scrollToSection(href: string) {
-  const id = href.replace("#", "");
-  const el = document.getElementById(id);
-  if (!el) return;
-  const headerOffset = 80;
-  const elementPosition = el.getBoundingClientRect().top;
-  const offsetPosition = elementPosition + window.scrollY - headerOffset;
-  window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-}
-
-function handleNavClick(
-  e: React.MouseEvent<HTMLAnchorElement>,
-  href: string,
-  closeMenu: () => void
-) {
-  e.preventDefault();
-  closeMenu();
-  scrollToSection(href);
-}
-
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const { t } = useI18n();
@@ -43,14 +21,19 @@ export function Navbar() {
       style={{ backgroundColor: "rgba(15,23,42,0.90)" }}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-8">
-        <a href="#home" className="flex items-center gap-3" onClick={(e) => handleNavClick(e, "#home", closeMenu)}>
+        <a href="#home" className="flex items-center gap-3" onClick={closeMenu}>
           <img
             src={logo}
             alt="ValTrim Inc."
             className="h-14 w-14 shrink-0 object-contain sm:h-16 sm:w-16"
-            style={{ filter: "drop-shadow(0 2px 6px rgba(255,255,255,0.35)) drop-shadow(0 1px 2px rgba(0,0,0,0.4))" }}
+            style={{
+              filter:
+                "drop-shadow(0 2px 6px rgba(255,255,255,0.35)) drop-shadow(0 1px 2px rgba(0,0,0,0.4))",
+            }}
           />
-          <span className="hidden text-lg font-semibold tracking-wide text-white sm:inline">ValTrim Inc.</span>
+          <span className="hidden text-lg font-semibold tracking-wide text-white sm:inline">
+            ValTrim Inc.
+          </span>
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex">
@@ -58,7 +41,7 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              onClick={(e) => handleNavClick(e, item.href, closeMenu)}
+              onClick={closeMenu}
               className="text-sm font-medium text-white/70 transition hover:text-white"
             >
               {item.label}
@@ -68,14 +51,16 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <div className="hidden lg:block">
-            <ButtonLink href="#contact" dark onClick={(e) => handleNavClick(e, "#contact", closeMenu)}>
+            <ButtonLink href="#contact" dark onClick={closeMenu}>
               {t.nav.contactCta}
             </ButtonLink>
           </div>
           <button
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label={t.nav.menu}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -89,14 +74,15 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-white/10 bg-[#0f172a] lg:hidden"
+            id="mobile-navigation"
+            className="absolute left-0 right-0 top-full max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-white/10 bg-[#0f172a] lg:hidden"
           >
             <div className="mx-auto grid max-w-7xl gap-3 px-4 py-4 sm:px-6">
               {t.nav.items.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href, closeMenu)}
+                  onClick={closeMenu}
                   className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white/85"
                 >
                   {item.label}
