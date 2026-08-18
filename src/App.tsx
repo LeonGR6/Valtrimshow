@@ -31,7 +31,13 @@ export default function App() {
 
       event.preventDefault();
       if (window.location.hash !== link.hash) window.history.pushState(null, "", link.hash);
-      requestAnimationFrame(() => section.scrollIntoView({ behavior: "smooth", block: "start" }));
+
+      const delay = document.getElementById("mobile-navigation") ? 300 : 0;
+      window.setTimeout(() => {
+        const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+        const top = section.getBoundingClientRect().top + window.pageYOffset - headerHeight - 8;
+        window.scrollTo(0, Math.max(0, top));
+      }, delay);
     };
 
     document.addEventListener("click", navigateToHash, true);
