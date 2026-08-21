@@ -13,7 +13,6 @@ import { Suppliers } from "@/components/sections/Suppliers";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
-import { ChatWidget } from "@/components/chatbot/ChatWidget";
 
 export default function App() {
   useEffect(() => {
@@ -62,7 +61,6 @@ export default function App() {
             <Contact />
           </main>
           <Footer />
-          <ChatWidget />
         </div>
       </I18nProvider>
     </ThemeProvider>
