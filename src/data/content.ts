@@ -61,6 +61,7 @@ export const portfolioGalleries = [
     "/portfolio/model-decor/model-decor-04.webp",
     "/portfolio/model-decor/model-decor-05.webp",
     "/portfolio/model-decor/model-decor-06.webp",
+    "/portfolio/model-decor/model-decor-07.webp",
   ],
 ];
 
